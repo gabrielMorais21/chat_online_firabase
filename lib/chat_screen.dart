@@ -62,7 +62,7 @@ class _ChatScreenState extends State<ChatScreen> {
       "uid": user.uid,
       "sendName": user.displayName,
       "senderPhotoUrl": user.photoUrl,
-      "time": Timestamp.now()
+      "time": FieldValue.serverTimestamp()
     };
 
     if(imgFile != null){
